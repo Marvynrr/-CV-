@@ -1,0 +1,30 @@
+/* Pour notre beau formulaire */
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 40px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label{
+    margin-bottom: 20px;
+}
+input, textarea, button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px grey;
+    width: 100%;
+}
+button {
+    background: white;
+    color: lightskyblue;
+    border: none;
+    cursor: grab;
+    width: 25vh;
+}
+.form-group:last-child{
+    align-self: center;
+}

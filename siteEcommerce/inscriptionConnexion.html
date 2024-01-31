@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription / connexion</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" width="150" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="inscriptionConnexion.html">Connexion/Inscription</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Boutique</a></li>
+                <li><a href="categorie.html">catégorie</a></li>
+                <li><a href="">menu 2</a></li>
+            </ul>
+            <ul>
+                <li><a href="actualite.html">Actualité</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="col" id="colconnexion">
+            <form name="connexion" method="GET" action="espaceClient.html">        
+            <h2>Connexion</h2>
+            <label for="mail1">Adresse email :</label>
+            <input type="email" placeholder="Votre adresse email" id="mail1" required>
+            <br><br>
+            <label for="mdp1">Mot de passe :</label>
+            <input type="password" placeholder="Votre mot de passe" id="mdp1" required>
+            <button type="button" name="affiche" onclick="affichePassword();">Voir</button>
+            <br><br>
+            <button type="submit" name="connexion">connexion</button>
+            <input type="reset">
+        </form>
+        </div>
+        <div class="col" id="colinscription">
+            <form name="inscription" method="POST" action="espaceClient.html" enctype="multipart/form-data">
+                <h2>Inscription</h2>
+                <label>Civilité :</label>
+                <input type="radio" name="civ" id="civ1" value="Homme"><label for="civ1">Homme</label>
+                <input type="radio" name="civ" id="civ2" value="Femme"><label for="civ2">Femme</label>
+                <input type="radio" name="civ" id="civ3" value="Autre" checked="checked"><label for="civ3">Autre</label>
+                <br><br>
+                <label for="nom">Nom :</label>
+                <input type="text" placeholder="Votre nom" id="nom" required>
+                <br><br>
+                <label for="prenom">Prénom :</label>
+                <input type="text" placeholder="Votre prenom" id="prenom" required>
+                <br><br>
+                <label for="datenaissance">Date de naissance :</label>
+                <input type="date" name="datenaissance" id="datenaissance" required>
+                <br><br>
+                <label for="mail2">Adresse email :</label>
+                <input type="email" placeholder="Votre adresse email" id="mail2" required>
+                <br><br>
+                <label for="tel">Téléphone :</label>
+                <input type="tel" name="tel" placeholder="Votre numéro de téléphone" id="tel" required minlength="10">
+                <br><br>
+                <label for="mdp2">Mot de passe :</label>
+                <input type="password" placeholder="Votre mot de passe" id="mdp2" required>
+                <br><br>
+                <button type="submit" name="inscription">inscription</button>
+                <input type="reset">
+            </form>
+        </div>
+    <Footer>
+        <div class="col" id="col1">
+            <address>
+                <p>18 rue du code</p>
+                <p>18000, Bourges</p>
+                <p>Tel : <a href="tel:0600000000">Tel : 0600000000</a></p>
+            </address>
+            <ul>
+                <li><a href="contact.html">Contactez-nous</a></li>
+            </ul>
+        </div> 
+        <div class="col" id="col2">
+            <ul>
+                <li><a href="cgv.html">CGV</a></li>
+                <li><a href="mentionslegales.html">Mentions légales</a></li>
+            </ul>
+        </div>
+        <div class="col" id="col3">            
+            <a href="https://www.youtube.com/watch?v=f6JD2sW6zvs" target="_blank" title="Lien des réseaux sociaux"><img src="assets/img/instagram.jpg" width="50" alt="logo"></a>
+            <a href="https://www.youtube.com/watch?v=f6JD2sW6zvs" target="_blank" title="Lien des réseaux sociaux"><img src="assets/img/facebook.png" width="50" alt="logo"></a>
+        </div>
+    </Footer>
+    <script>
+        function affichePassword() {
+            // Je vais sélectionner l'élément sur lequel je dois intervenir
+            let champs = document.getElementById('mdp1');
+            // Je récupère le type courant
+            let type = champs.getAttribute('type');
+            if (type == 'password') {
+                // Si c'est password je passe en text pour afficher le mot de passe
+                champs.setAttribute('type', 'text');                
+            } else{
+                // Sinon je passe en password pour le cacher
+                champs.setAttribute('type', 'password');
+            }
+        }
+    </script>    
+</body>
+</html>

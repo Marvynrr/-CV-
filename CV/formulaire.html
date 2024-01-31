@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="margin-0 overflow-hidden">
+    <header>
+        <div class="bg-black-500">
+            <div class="fixed top-0 right-0 bg-white-500 border-solid border-2 border-black-400 p-2 m-2">
+                <a class="hover:bg-gray-200 border-solid border-2 border-black-400 m-2 p-1 text-sm" href="formulaire.html">Retour</a>
+                <a class="hover:bg-gray-200 border-solid border-2 border-black-400 m-2 p-1" href="index.html">Mon CV</a></div>
+        </div>
+        <div class="bg-gray-500 shadow-lg lg-hidden p-4">
+            <div class="text-xl shadow-lg font-bold block-left m-10"><img class="p-4 w-20" src="assets/img/logo.png" alt="logo"><h1>Bienvenue sur mon formulaire de contact :</h1></div>
+        </div>
+    </header>
+        <main>
+        <form method="GET" action="envoyer.html">
+            <div class="bg-gray-200 m-4" id="formulaire">
+                <div class="flex">
+                    <label for="name">Votre nom :</label>
+                    <input type="text" id="name" placeholder="Votre nom" required>
+                </div>
+                <div class="flex">
+                    <label class="flex" for="prenom">Votre prénom :</label>
+                    <input type="text" id="prenom" placeholder="Votre prénom" required>
+                </div>
+                <div class="flex">
+                    <label class="flex" for="email">Votre email :</label>
+                    <input type="email" id="email" placeholder="Votre email" required>
+                </div>
+                <div class="flex">
+                    <label class="flex" for="tel">Votre numéro de téléphone :</label>
+                    <input type="tel" id="tel" placeholder="XXXXXXXXXX" minlength="10" required>
+                </div>
+                <div class="flex">
+                    <label class="flex" for="sujet">Sujet :</label>
+                    <input type="text" id="sujet" minlength="40" required>
+                </div>
+                <div class="flex">
+                    <label class="flex" for="message">Message :</label>
+                    <input type="text" id="message" placeholder="Ecrivez-moi" minlength="100" required>
+                </div>
+            </div>
+            <div class="bg-white-500 border-solid border-2 border-black-400 p-2 ml-4 m-2">
+                <input type="submit" class="hover:bg-gray-200 border-solid border-2 border-black-400 m-2 p-1 text-sm" value="Envoyer !">
+                <input type="reset" class="hover:bg-gray-200 border-solid border-2 border-black-400 m-2 p-1" value="Réinitialiser"></div>
+        </form>
+            
+
+        </main>
+    <footer class="flex bg-gray-500 lg-hidden inset-x-0 bottom-0 p-2">
+        <div class="text-white font ml-2"><p class="font-semibold">Mes réseaux sociaux</p>
+            <a class="flex" href="http://facebook.com">Retrouvez moi sur Facebook :<img class=" flex w-8 m-4" src="assets/img/facebook.png" id="facebook" alt="facebook"></a>
+            <a class="flex" href="http://instagram.com">Retrouvez moi sur Instagram :<img class="flex w-8 m-4" src="assets/img/instagram.jpg" id="instagram" alt="instagram"></a>
+            <div class="text-xs text-white">&copy; Site créé par Marvyn Richer </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>Me contacter</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="assets/img/logo.png" alt="Logo Développeur" title="Le dev c'est la vie"></a>
+        </div>
+        <div class="menu">
+            <nav id="menu">
+                <ul class="element">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="articles.html">Blog</a></li>
+                    <li><a href="contact.html">Me contacter</a></li>
+                </ul>
+            </nav>
+            <nav id="menu_mobile">
+                <select name="navigation_mobile" id="navigation_mobile">
+                    <option value="index.html">Accueil</option>
+                    <option value="articles.html">Blog</option>
+                    <option value="contact.html">Me contacter</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form class="flex-form" method="POST" action="#">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom">
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom">
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="sujet">Sujet :</label>
+                <input type="text" id="sujet" name="sujet">
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" name="submit" id="submit">Envoyer</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Un site fait pour ceux qui aiment les vrais véhicules</p>
+    </footer>    
+</body>
+</html>

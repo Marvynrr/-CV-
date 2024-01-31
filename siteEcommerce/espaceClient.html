@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>espace client</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" width="150" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="inscriptionConnexion.html">Connexion/Inscription</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Boutique</a></li>
+                <li><a href="categorie.html">catégorie</a></li>
+                <li><a href="">menu 2</a></li>
+            </ul>
+            <ul>
+                <li><a href="actualite.html">Actualité</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="col" id="colraccourci">
+        <ul>
+            <li><a href="#compte">COMPTE</a></li>
+            <li><a href="#commandes">COMMANDES</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+    <h1>COMPTE</h1>
+    <div class="col" id="compte">
+        <label>Civilité :</label>
+                <input type="radio" name="civ" id="civ1" value="Homme"><label for="civ1">Homme</label>
+                <input type="radio" name="civ" id="civ2" value="Femme"><label for="civ2">Femme</label>
+                <input type="radio" name="civ" id="civ3" value="Autre" checked="checked"><label for="civ3">Autre</label>
+                <br><br>
+                <label for="nom">Nom :</label>
+                <input type="text" placeholder="Votre nom" id="nom" required>
+                <br><br>
+                <label for="prenom">Prénom :</label>
+                <input type="text" placeholder="Votre prenom" id="prenom" required>
+                <br><br>
+                <label for="datenaissance">Date de naissance :</label>
+                <input type="date" name="datenaissance" id="datenaissance" required>
+                <br><br>
+                <label for="mail">Adresse email :</label>
+                <input type="email" placeholder="Votre adresse email" id="mail" required>
+                <br><br>
+                <label for="tel">Téléphone :</label>
+                <input type="tel" name="tel" placeholder="Votre numéro de téléphone" id="tel" required minlength="10">
+                <br><br>
+                <label for="mdp">Mot de passe :</label>
+                <input type="password" placeholder="Votre mot de passe" id="mdp" required>
+                <br><br>
+    </div>
+    <div>
+        <table>
+            <tr><th>COMMANDES :</th>
+            <th>DATE :</th>
+        <th>PDF :</th>
+    <tr><th>...</th>
+        <th>...</th>
+        <th>...</th></tr>
+    <tr><th>...</th>
+        <th>...</th> 
+        <th>...</th></tr>
+        <tr><th>...</th>
+            <th>...</th>
+            <th>...</th></tr>
+        </table>
+    </div>
+    <Footer>
+        <div class="col" id="col1">
+            <address>
+                <p>18 rue du code</p>
+                <p>18000, Bourges</p>
+                <p>Tel : <a href="tel:0600000000">Tel : 0600000000</a></p>
+            </address>
+            <ul>
+                <li><a href="contact.html">Contactez-nous</a></li>
+            </ul>
+        </div> 
+        <div class="col" id="col2">
+            <ul>
+                <li><a href="cgv.html">CGV</a></li>
+                <li><a href="mentionslegales.html">Mentions légales</a></li>
+            </ul>
+        </div>
+        <div class="col" id="col3">            
+            <a href="https://www.youtube.com/watch?v=f6JD2sW6zvs" target="_blank" title="Lien des réseaux sociaux"><img src="assets/img/instagram.jpg" width="50" alt="logo"></a>
+            <a href="https://www.youtube.com/watch?v=f6JD2sW6zvs" target="_blank" title="Lien des réseaux sociaux"><img src="assets/img/facebook.png" width="50" alt="logo"></a>
+        </div>
+    </Footer>    
+</body>
+</html>

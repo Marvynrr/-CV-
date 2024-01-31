@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cours 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="alternate stylesheet" type="text/css" title="style de nuit" href="night-style.css">
+</head>
+<body>
+    <h1>Bienvenue sur le cours n°3 (format Titre) (1 seul obligatoire)</h1>
+        <hr color="orange" size="3" width="25%">
+    <h2>Exemple de texte</h2>
+        <p>La réunion aura lieu le <time datetime="2023-11-06T15:30">06 Novembre 2023 à 15h30</time>. (Une donnée utile pour les machines etc) <br>Cette balise peut être utile pour son année de naissance par exemple.</p>
+            <p><abbr title="Hypertext Markup Language">HTML</abbr> est ce qui permet de créer une page web et abbr = montrer la legende</p>
+                <p>La balise p permet de structurer le texte d'une page web.</p>
+                    <p>Cela permet de mettre à la ligne.</p>
+                <small><p>Ceci est un paragraphe avec une écriture plus petite.</p>
+                    <small><mark>Encore plus petit ! (balise mark permet de mettre en évidence le texte choisit)</mark></small>
+                </small><p>Ceci est la fin du paragraphe</p>
+                
+                
+                <h2>Exemple de balises</h2>
+    <h3>Details</h3>
+    <details>
+        <summary>Cliquez pour en savoir plus</summary>
+        <p>Ce contenu peut être masqué ou révélé en cliquant sur le résumé</p>
+    </details>
+
+                <h3>Image</h3>
+                <img src="etoile.jpg" width="200" alt="Quand l'image ne charge pas">
+                <h3>Musique</h3>
+                <audio controls>
+                    <source src="Machine Gun Kelly - Swim Good (Frank Ocean Cover).mp3" type="audio/mpeg" alt="L'audio ne fonctionne pas" controls>
+                    <source src="Machine Gun Kelly - Swim Good (Frank Ocean Cover).mp3" type="audio/ogg" alt="L'audio ne fonctionne pas" controls>
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+                <br>
+                <h3>Vidéo</h3>
+                <video controls width="200" height="100">
+                    <source src="Machine Gun Kelly - Swim Good (Frank Ocean Cover).mp4" type="video/mp4" alt="L'video ne fonctionne pas" controls>
+                    <source src="Machine Gun Kelly - Swim Good (Frank Ocean Cover).mp4" type="video/webm" alt="L'video ne fonctionne pas" controls>
+                    <track kind="subtitles" src="sous-titres-fr.vtt" srclang="fr" label="français">
+                    <track kind="subtitles" src="subtitles-en.vtt" srclang="en" label="english">
+                    Votre navigateur ne supporte pas l'élément video.
+                </video>
+                <h2>Exemple d'hypertexte</h2>
+                <a href="https://www.youtube.com/watch?v=f6JD2sW6zvs" target="_blank" title="Lien de la vidéo">Cliquez ici pour avoir le lien de la vidéo</a>
+    <h3>Dessin</h3>
+    <canvas id="monCanvas" width="200" height="100"></canvas>
+    <script>
+        const canvas = document.getElementById('monCanvas');
+        const context = canvas.getContext('2d');
+    </script>
+    <h3>graphique vectorielle</h3>
+    <svg width="200" height="100">
+        <circle cx="50" cy="50" r="40" stroke="red" stroke-width="2" fill="grey" />
+    <!-- Ajouter éléments graphiques ici-->
+    </svg>
+<p><b>Voici un exemple de code HTML : </b><code>&lt;p&gt; Ceci est un paragraphe &lt;/p&gt;</code></p>
+    <nav role="navigation">
+        <ul>
+            <h2 style="color: red;">Exemple de navigation (format sous-titre)</h2>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/produits">Produits</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <h3>Exemple de listage</h3>
+            <li>Elément 1</li>
+            <li>Elément 2</li>
+            <li>Elément 3</li>
+        </ul>
+        <ul>
+            <h4 style="color: blue;">Exemple de listage avec sous-élément</h4>
+            <li>Elément 1</li>
+            <li>Elément 2</li>
+                <ul>
+                    <li>Sous-élément 1</li>
+                    <li>Sous-élément 2</li>               
+                </ul>
+            <li>Elément 3</li>
+        </ul>
+        <ol>
+            <h5 style="color: green;">Exemple de listage numéroté</h5>
+            <li>Elément 1</li>
+            <li>Elément 2</li>
+            <li>Elément 3</li>
+        </ol>
+        <ol type="I">
+            <h6>Exemple de listage avec un type différent</h6>
+            <li>Elément I</li>
+            <li>Elément II</li>
+            <li>Elément III</li>
+        </ol>
+        <ol start="10">
+            <h4>Exemple de listage à partir d'un nombre</h4>
+            <li>Elément 10</li>
+            <li>Elément 11</li>
+            <li>Elément 12</li>
+        </ol>
+        <ol reversed>
+            <h4>Exemple de listage inversé</h4>
+            <li>Elément 3</li>
+            <li>Elément 2</li>
+            <li>Elément 1</li>
+        </ol>
+        <ol>
+            <h4>Exemple de navigation via un listage</h4>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/produits">Produits</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ol>
+    </nav>
+    <h3>Plan Map</h3>
+    <img src="plan.png"  alt="Plan du bâtiment" usemap="#planMap">
+    <map name="planMap">
+        <area shape="rect" coords="0,0,100,100" href="salle1.html" alt="Salle 1">
+        <area shape="rect" coords="100,0,200,100" href="salle2.html" alt="Salle 2">
+    </map>
+    <h3>Figure</h3>
+    <figure>
+        <img src="etoile.jpg" alt="Une belle image des étoiles" width="200">
+        <figcaption>Une belle image des étoiles</figcaption>
+    </figure>
+    <h3>Exemple tableaux</h3>
+    <table border="3" cellspacing="10">
+        <colgroup>
+            <col span="1" style="background-color: grey;">
+            <col span="2" style="background-color: rgb(75, 75, 75);">
+        </colgroup>
+        <tr>
+            <td>Cellule 1</td>
+            <td>Cellule 2</td>
+        </tr>
+        <tr>
+            <td>Cellule 3</td>
+            <td>Cellule 4</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Nom :</th>
+            <th>Prenom :</th>
+        </tr>
+        <tr>
+            <td>Richer</td>
+            <td>Marvyn</td>
+        </tr>
+    </table>
+</body>
+<footer>
+    <address>
+        <p>Nom de l'entreprise</p>
+        <p>123 rue de l'exemple</p>
+        <p>Ville, code postal</p>
+        <p>Téléphone : <a href="tel:+331111111111">+33 11 11 11 11 11</a></p>
+        <p>E-mail : <a href="mailto:contact@entreprise.com">contatc@entreprise.com</a></p>
+    </address>
+</footer>
+</html>
