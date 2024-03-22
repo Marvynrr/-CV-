@@ -11,6 +11,10 @@ P {
     margin-top: 2px;
 }
 
+h3 {
+    margin-top: 50px;
+}
+
 .titre {
     background-image:url("img/fond2.jpg");
     background-size: 100% 300px;
@@ -260,4 +264,4 @@ button:hover {
     100% {
       background-position: 0 0;
     }
-}
+} 
